@@ -8,7 +8,7 @@ This repository is for experiment on H5P on Drupal to accomodate math problems a
 1. H5P and H5P Editor modules are installed along with CKEditor5 Wiris(MathType/ChemType)
 2. Under structure, H5P Library of H5P-math-display needs to be uploaded.
 3. Codes below is added to sites/default/settings.php for MathJax
-`
+```
 $config['h5p.settings']['h5p_library_config'] = array(
   'H5P.MathDisplay' => array(
     "observers" => array(
@@ -34,6 +34,6 @@ $config['h5p.settings']['h5p_library_config'] = array(
     )
   )
 );
-`
+```
 
 For inLineMath and displayMath, $ and $$ are included but they do not work yet. It works with M
