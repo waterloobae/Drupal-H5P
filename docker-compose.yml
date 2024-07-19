@@ -1,0 +1,42 @@
+services:
+  drupal:
+    container_name: drupal-h5p
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - drupal-network
+    ports:
+      - 8080:80
+    # The following volumes are used to persist the data
+    # This should be done to create subdirectories for /sites.
+    # $ mkdir drupal-sites
+    # $ docker run --rm drupal tar -cC /var/www/html/sites . | tar -xC ./drupal-sites
+    volumes:
+      - ./drupal-sites:/var/www/html/sites
+      - ./drupal-modules:/var/www/html/modules
+      - ./drupal-profiles:/var/www/html/profiles
+      - ./drupal-themes:/var/www/html/themes
+  mysql:
+      container_name: drupal-mysql
+      image: mysql:latest
+      networks:
+        - drupal-network
+      volumes:
+        - ./db_data:/var/lib/mysql
+      environment:
+        MYSQL_ROOT_PASSWORD_FILE: /run/secrets/db_root_password
+        MYSQL_DATABASE: drupal
+        MYSQL_USER: drupal
+        MYSQL_PASSWORD_FILE: /run/secrets/db_password
+      secrets:
+        - db_root_password
+        - db_password
+secrets:
+   db_password:
+     file: ../!secrets/db_password.txt
+   db_root_password:
+     file: ../!secrets/db_root_password.txt
+networks:
+  drupal-network:
+    driver: bridge

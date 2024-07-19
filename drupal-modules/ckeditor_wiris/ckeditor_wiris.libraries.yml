@@ -1,0 +1,13 @@
+ckeditor_wiris:
+  js:
+    js/build/MathType.js: { preprocess: false, minified: true }
+  css:
+    theme:
+      css/wiris.ckeditor.css: { }
+  dependencies:
+    - core/ckeditor5
+
+ckeditor_wiris.admin:
+  css:
+    theme:
+      css/wiris.admin.css: { }

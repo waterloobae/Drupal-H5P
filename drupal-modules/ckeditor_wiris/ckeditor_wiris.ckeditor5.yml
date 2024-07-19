@@ -1,0 +1,14 @@
+ckeditor_wiris_extension:
+  ckeditor5:
+    plugins:
+      - MathType.MathType
+  drupal:
+    label: MathType
+    library: ckeditor_wiris/ckeditor_wiris
+    admin_library: ckeditor_wiris/ckeditor_wiris.admin
+    toolbar_items:
+      MathType:
+        label: MathType
+      ChemType:
+        label: ChemType
+    elements: false

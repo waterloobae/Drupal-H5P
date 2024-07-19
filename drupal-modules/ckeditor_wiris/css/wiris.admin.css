@@ -1,0 +1,7 @@
+.ckeditor5-toolbar-button-MathType {
+  background-image: url(../js/ckeditor5_plugins/MathType/theme/icons/ckeditor5-formula.svg);
+}
+
+.ckeditor5-toolbar-button-ChemType {
+  background-image: url(../js/ckeditor5_plugins/MathType/theme/icons/ckeditor5-chem.svg);
+}

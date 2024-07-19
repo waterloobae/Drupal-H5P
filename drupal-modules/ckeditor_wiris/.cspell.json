@@ -1,0 +1,29 @@
+{
+  "version": "0.2",
+  "language": "en-US",
+  "ignorePaths": [
+    "**/.*.json",
+    ".*ignore",
+    "README.md",
+    "package.json",
+    "js/build/*",
+    "js/ckeditor5_plugins/*"
+  ],
+  "words": [
+    "chemtype",
+    "ckeditor",
+    "mathtype",
+    "preprocess",
+    "wiris"
+  ],
+  "overrides": [
+    {
+      "filename": "**/{*.engine,*.inc,*.install,*.module,*.profile,*.theme}",
+      "languageId": "php"
+    },
+    {
+      "filename": "**/scripts/{*.php.txt, *.sh}",
+      "languageId": "php"
+    }
+  ]
+}

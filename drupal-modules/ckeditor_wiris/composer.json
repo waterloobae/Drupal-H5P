@@ -1,0 +1,13 @@
+{
+    "name": "drupal/ckeditor_wiris",
+    "description": "Add ability to insert math and chemistry equations — using MathType and ChemType — into your CKEditor.",
+    "type": "drupal-module",
+    "homepage": "https://drupal.org/project/ckeditor_wiris",
+    "support": {
+        "issues": "https://drupal.org/project/issues/ckeditor_wiris"
+    },
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "drupal/core": "^9.3 || ^10 || ^11"
+    }
+}

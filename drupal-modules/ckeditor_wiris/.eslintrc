@@ -1,0 +1,3 @@
+{
+  "ignorePatterns": ["js/build/*", "js/ckeditor5_plugins/*", "node_modules/*"]
+}

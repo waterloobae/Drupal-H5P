@@ -1,0 +1,13 @@
+name: CKEditor5 Wiris (MathType/ChemType)
+type: module
+description: Add ability to insert math and chemistry equations — using MathType and ChemType — into your CKEditor5.
+core_version_requirement: ^10 || ^11
+package: CKEditor5
+
+dependencies:
+  - drupal:ckeditor5
+
+# Information added by Drupal.org packaging script on 2024-03-26
+version: '3.0.0-alpha3+1-dev'
+project: 'ckeditor_wiris'
+datestamp: 1711453594
