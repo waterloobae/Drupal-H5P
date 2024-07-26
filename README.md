@@ -25,8 +25,8 @@ $config['h5p.settings']['h5p_library_config'] = array(
           "tex2jax" => array(
             // Important, otherwise MathJax will be rendered inside CKEditor
             "ignoreClass" => "ckeditor",
-            "inlineMath" => array(array("$", "$"), array("\\(", "\\)")),
-            "displayMath" => array(array("$$", "$$"), array("\\[", "\\]"))
+            "inlineMath" => array(array('$', '$'), array("\\(", "\\)")),
+            "displayMath" => array(array('$$', '$$'), array("\\[", "\\]"))
           ),
           "messageStyle" => "none"
         )
