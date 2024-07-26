@@ -6,7 +6,7 @@ This repository is for experiment on H5P on Drupal to accomodate math problems a
 [Using Latex with H5P and MathJax](https://h5p.org/mathematical-expressions)
 
 1. H5P and H5P Editor modules are installed along with CKEditor5 Wiris(MathType/ChemType)
-2. Under structure, H5P Library of H5P-math-display needs to be uploaded.
+2. Under Content, H5P Library of H5P-math-display needs to be uploaded.
 3. Codes below is added to sites/default/settings.php for MathJax
 ```
 $config['h5p.settings']['h5p_library_config'] = array(
